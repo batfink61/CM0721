@@ -32,3 +32,21 @@ C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csproj.GenerateResource.Cache
 C:\CM0721\OrderMgt\bin\Debug\Moq.dll
 C:\CM0721\OrderMgt\bin\Debug\Moq.xml
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csprojResolveAssemblyReference.cache
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\OrderMgt.exe.config
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.exe
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.pdb
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\OrderMgt.exe
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\OrderMgt.pdb
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\Moq.dll
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\Moq.xml
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csprojResolveAssemblyReference.cache
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.BuildingOptionsSelectForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomerSearchForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.frmDialogue.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomersForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.NewOrderForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.OrderSearchForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.OrdersForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.UpdateOrderForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.Properties.Resources.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csproj.GenerateResource.Cache

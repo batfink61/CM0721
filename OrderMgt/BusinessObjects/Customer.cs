@@ -122,7 +122,7 @@ namespace OrderMgt
             // Validate the data before attempting to insert/update
             // Any errors will throw exceptions and handled by the presenter
 
-            ValidateData();
+            //ValidateData();
 
             // Data is valid at this point so we can safely attempt to save in DB
 
@@ -132,24 +132,6 @@ namespace OrderMgt
                 CustomerGateway.Update(_customerId, _name, _address, _town, _postcode, _telephone, _mobile);
         }
 
-        private void ValidateData()
-        {
-            if (_name == "")
-                throw new ArgumentOutOfRangeException("Name", "Name cannot be blank");
-            if (_address == "")
-                throw new ArgumentOutOfRangeException("Address", "Address cannot be blank");
-            if (_name.Length > 100)
-                throw new ArgumentOutOfRangeException("Name", "Name not be longer than 100 characters.");
-            if (_address.Length > 180)
-                throw new ArgumentOutOfRangeException("Address", "PostCode not be longer than 180 characters.");
-            if (_town.Length > 80)
-                throw new ArgumentOutOfRangeException("Town", "PostCode not be longer than 80 characters.");
-            if (_postcode.Length > 9)
-                throw new ArgumentOutOfRangeException("PostCode", "PostCode not be longer than 9 characters.");
-            if (_telephone.Length > 20)
-                throw new ArgumentOutOfRangeException("Telephone", "Telephone No. not be longer than 20 characters.");
-            if (_mobile.Length > 20)
-                throw new ArgumentOutOfRangeException("Mobile", "Mobile Number not be longer than 20 characters.");
-        }
+        
     }
 }
