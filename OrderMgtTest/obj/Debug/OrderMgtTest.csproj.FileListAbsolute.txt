@@ -1,0 +1,9 @@
+C:\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.csprojResolveAssemblyReference.cache
+C:\CM0721\OrderMgtTest\bin\Debug\OrderMgtTest.dll
+C:\CM0721\OrderMgtTest\bin\Debug\OrderMgtTest.pdb
+C:\CM0721\OrderMgtTest\bin\Debug\OrderMgt.exe
+C:\CM0721\OrderMgtTest\bin\Debug\OrderMgt.pdb
+C:\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.dll
+C:\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.pdb
+C:\CM0721\OrderMgtTest\bin\Debug\Moq.dll
+C:\CM0721\OrderMgtTest\bin\Debug\Moq.xml

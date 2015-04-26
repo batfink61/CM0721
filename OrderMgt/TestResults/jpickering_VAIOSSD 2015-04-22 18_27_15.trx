@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="af3b9cad-8ea5-403e-ab5a-869b15104ae6" name="jpickering@VAIOSSD 2015-04-22 18:27:15" runUser="VaioSSD\jpickering" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f9872536-3300-45e2-8d5a-1d6d5e11baff">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="jpickering_VAIOSSD 2015-04-22 18_27_15">
+      <DeploymentItem filename="C:\CM0721\OrderMgt\bin\Debug\OrderMgt.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-04-22T18:27:16.0003975+01:00" queuing="2015-04-22T18:27:17.6514919+01:00" start="2015-04-22T18:27:17.7674986+01:00" finish="2015-04-22T18:27:18.8795622+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestBuildingFactory" storage="c:\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="bb55e774-004f-543e-a59b-79e20d7382b3">
+      <Execution id="c0bd4bd1-2eca-479e-9ac3-43a7edfcbee3" />
+      <TestMethod codeBase="C:/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest1, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestBuildingFactory" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="bb55e774-004f-543e-a59b-79e20d7382b3" executionId="c0bd4bd1-2eca-479e-9ac3-43a7edfcbee3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c0bd4bd1-2eca-479e-9ac3-43a7edfcbee3" testId="bb55e774-004f-543e-a59b-79e20d7382b3" testName="TestBuildingFactory" computerName="VAIOSSD" duration="00:00:00.0264985" startTime="2015-04-22T18:27:17.8655042+01:00" endTime="2015-04-22T18:27:18.7705559+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0bd4bd1-2eca-479e-9ac3-43a7edfcbee3">
+    </UnitTestResult>
+  </Results>
+</TestRun>

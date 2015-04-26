@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="88b6265a-fd45-4679-8593-254b1fb1ed4f" name="jpickering@VAIOSSD 2015-04-22 20:56:47" runUser="VaioSSD\jpickering" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f9872536-3300-45e2-8d5a-1d6d5e11baff">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="jpickering_VAIOSSD 2015-04-22 20_56_47">
+      <DeploymentItem filename="C:\CM0721\OrderMgt\bin\Debug\OrderMgt.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-04-22T20:56:47.6685476+01:00" queuing="2015-04-22T20:56:49.4566498+01:00" start="2015-04-22T20:56:49.5526553+01:00" finish="2015-04-22T20:57:21.8315016+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="5" executed="5" passed="4" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="VAIOSSD" outcome="Error" timestamp="2015-04-22T20:57:21.8295015+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestFactoryBuilding" storage="c:\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="25c0c5d5-ac4c-dd4a-9c8c-10a7524dc0d3">
+      <Execution id="1c4a41d9-c2f1-4835-8661-4e1c54be6d6c" />
+      <TestMethod codeBase="C:/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest1, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFactoryBuilding" />
+    </UnitTest>
+    <UnitTest name="TestSaveBlankCustomer" storage="c:\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="c00d3a7d-1437-d209-7c1e-410a5daa9103">
+      <Execution id="4150cdee-d930-40df-9207-e03942e47fc5" />
+      <TestMethod codeBase="C:/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest1, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSaveBlankCustomer" />
+    </UnitTest>
+    <UnitTest name="TestNewCustomerProperties" storage="c:\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="b6e883b8-15b2-1bd9-8c58-7c19e01efded">
+      <Execution id="e5e5532b-54e4-4698-913f-48f17e64bb40" />
+      <TestMethod codeBase="C:/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest1, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestNewCustomerProperties" />
+    </UnitTest>
+    <UnitTest name="TestCreateionOfNullBuilding" storage="c:\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="ff4eef97-e818-5ecf-36fb-5e9711fc2f26">
+      <Execution id="9b279f7c-d173-41a4-b68b-a8a5ee78a451" />
+      <TestMethod codeBase="C:/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest1, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreateionOfNullBuilding" />
+    </UnitTest>
+    <UnitTest name="TestLoadCustomer" storage="c:\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="d9fe346f-7d35-eab8-4559-78c502ed78d8">
+      <Execution id="77aba5f7-e7a9-410b-85b2-17c1f777c8d2" />
+      <TestMethod codeBase="C:/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest1, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestLoadCustomer" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ff4eef97-e818-5ecf-36fb-5e9711fc2f26" executionId="9b279f7c-d173-41a4-b68b-a8a5ee78a451" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25c0c5d5-ac4c-dd4a-9c8c-10a7524dc0d3" executionId="1c4a41d9-c2f1-4835-8661-4e1c54be6d6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6e883b8-15b2-1bd9-8c58-7c19e01efded" executionId="e5e5532b-54e4-4698-913f-48f17e64bb40" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c00d3a7d-1437-d209-7c1e-410a5daa9103" executionId="4150cdee-d930-40df-9207-e03942e47fc5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d9fe346f-7d35-eab8-4559-78c502ed78d8" executionId="77aba5f7-e7a9-410b-85b2-17c1f777c8d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9b279f7c-d173-41a4-b68b-a8a5ee78a451" testId="ff4eef97-e818-5ecf-36fb-5e9711fc2f26" testName="TestCreateionOfNullBuilding" computerName="VAIOSSD" duration="00:00:00.0254039" startTime="2015-04-22T20:56:49.6366601+01:00" endTime="2015-04-22T20:56:50.5617131+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b279f7c-d173-41a4-b68b-a8a5ee78a451">
+    </UnitTestResult>
+    <UnitTestResult executionId="1c4a41d9-c2f1-4835-8661-4e1c54be6d6c" testId="25c0c5d5-ac4c-dd4a-9c8c-10a7524dc0d3" testName="TestFactoryBuilding" computerName="VAIOSSD" duration="00:00:00.0010376" startTime="2015-04-22T20:56:50.5827143+01:00" endTime="2015-04-22T20:56:50.5987152+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c4a41d9-c2f1-4835-8661-4e1c54be6d6c">
+    </UnitTestResult>
+    <UnitTestResult executionId="e5e5532b-54e4-4698-913f-48f17e64bb40" testId="b6e883b8-15b2-1bd9-8c58-7c19e01efded" testName="TestNewCustomerProperties" computerName="VAIOSSD" duration="00:00:00.0010838" startTime="2015-04-22T20:56:50.6187163+01:00" endTime="2015-04-22T20:56:50.6267168+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5e5532b-54e4-4698-913f-48f17e64bb40">
+    </UnitTestResult>
+    <UnitTestResult executionId="4150cdee-d930-40df-9207-e03942e47fc5" testId="c00d3a7d-1437-d209-7c1e-410a5daa9103" testName="TestSaveBlankCustomer" computerName="VAIOSSD" duration="00:00:00.0255040" startTime="2015-04-22T20:56:50.6527183+01:00" endTime="2015-04-22T20:56:50.6837200+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4150cdee-d930-40df-9207-e03942e47fc5">
+    </UnitTestResult>
+    <UnitTestResult executionId="77aba5f7-e7a9-410b-85b2-17c1f777c8d2" testId="d9fe346f-7d35-eab8-4559-78c502ed78d8" testName="TestLoadCustomer" computerName="VAIOSSD" duration="00:00:31.1227801" startTime="2015-04-22T20:56:50.7087215+01:00" endTime="2015-04-22T20:57:21.8315016+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77aba5f7-e7a9-410b-85b2-17c1f777c8d2">
+    </UnitTestResult>
+  </Results>
+</TestRun>
