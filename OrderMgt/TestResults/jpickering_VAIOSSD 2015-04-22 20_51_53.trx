@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c06823f8-136b-42a3-9b5f-75ada018a325" name="jpickering@VAIOSSD 2015-04-22 20:51:53" runUser="VaioSSD\jpickering" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f9872536-3300-45e2-8d5a-1d6d5e11baff">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\CM0721\OrderMgt\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="jpickering_VAIOSSD 2015-04-22 20_51_53">
+      <DeploymentItem filename="C:\CM0721\OrderMgt\bin\Debug\OrderMgt.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-04-22T20:51:53.6747321+01:00" queuing="2015-04-22T20:51:53.9487478+01:00" start="2015-04-22T20:51:53.9917502+01:00" finish="2015-04-22T20:51:54.4757779+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestCreateionOfNullBuilding" storage="c:\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="ff4eef97-e818-5ecf-36fb-5e9711fc2f26">
+      <Execution id="b9aec65d-7fc3-4e67-8d5b-ec3406e3b963" />
+      <TestMethod codeBase="C:/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest1, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreateionOfNullBuilding" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ff4eef97-e818-5ecf-36fb-5e9711fc2f26" executionId="b9aec65d-7fc3-4e67-8d5b-ec3406e3b963" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b9aec65d-7fc3-4e67-8d5b-ec3406e3b963" testId="ff4eef97-e818-5ecf-36fb-5e9711fc2f26" testName="TestCreateionOfNullBuilding" computerName="VAIOSSD" duration="00:00:00.0186891" startTime="2015-04-22T20:51:54.0367528+01:00" endTime="2015-04-22T20:51:54.4327754+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b9aec65d-7fc3-4e67-8d5b-ec3406e3b963">
+    </UnitTestResult>
+  </Results>
+</TestRun>

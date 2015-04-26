@@ -177,16 +177,7 @@ namespace OrderMgt
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            try
-            {
-                _presenter.btnSave_Click();
-                
-            }
-            catch (Exception ex)
-            {
-                ShowMessage("Unable to save customer: " + ex.Message);
-            }
-            
+            _presenter.btnSave_Click();
         }
 
         private void btnNew_Click(object sender, EventArgs e)

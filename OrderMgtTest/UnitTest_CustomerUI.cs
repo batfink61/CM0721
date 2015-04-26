@@ -13,28 +13,12 @@ namespace OrderMgtTest
         [TestInitialize]
         public void TestInitialise()
         {
+            IOrder order = new Order();
+            MockNewOrderForm screen = new MockNewOrderForm();
+            NewOrderPresenter presenter = new NewOrderPresenter(screen, order);
+            screen.ShowDialog();
         }
-        [TestMethod]
-        public void TestCustomer_UI()
-        {
-            //REF: https://msdn.microsoft.com/en-us/library/ms182532.aspx
-            ICustomerGui screen = new CustomersForm();
-            CustomerPresenter presenter = new CustomerPresenter(screen);
-            screen.CustomerId = "new";
-            screen.CustomerName = "";
-            //Please see the ValidateData() method of CustomerPresenter for error messages
-             
-            try
-            {
-                presenter.btnSave_Click();
-            }
-            catch (ArgumentOutOfRangeException e)
-            {
-                StringAssert.Contains(e.Message, "Name cannot be blank");
-                return;
-            }
-            Assert.Fail("No exception was thrown.");
-        }
+
         [TestCleanup]
         public void TestCleanUp()
         {

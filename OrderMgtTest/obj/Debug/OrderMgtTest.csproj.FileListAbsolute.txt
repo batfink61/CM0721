@@ -7,12 +7,3 @@ C:\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.dll
 C:\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.pdb
 C:\CM0721\OrderMgtTest\bin\Debug\Moq.dll
 C:\CM0721\OrderMgtTest\bin\Debug\Moq.xml
-U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\bin\Debug\OrderMgtTest.dll
-U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\bin\Debug\OrderMgtTest.pdb
-U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\bin\Debug\Moq.dll
-U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\bin\Debug\OrderMgt.exe
-U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\bin\Debug\OrderMgt.pdb
-U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\bin\Debug\Moq.xml
-U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.csprojResolveAssemblyReference.cache
-U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.dll
-U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.pdb
