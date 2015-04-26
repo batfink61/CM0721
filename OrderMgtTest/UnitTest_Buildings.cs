@@ -45,7 +45,7 @@ namespace OrderMgtTest
         public void TestBuildingOptions()
         {
             IBuilding building = BuildingFactory.Instance.GetBuildingType("Orchard");
-            BuildingDecorator decoratedBuilding = new BuildingOptionDecorator(building,"6");
+            BuildingDecorator decoratedBuilding = new BuildingOptionDecorator(building, "6");
             Assert.AreNotEqual(building.Name, "Orchard", "Factory failed to return 'Orchard' for building type Orchard");
         }
     }
