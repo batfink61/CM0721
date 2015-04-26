@@ -6,7 +6,7 @@ using System.Data;
 
 namespace OrderMgt
 {
-    class BuildingOptionDecorator : BuildingDecorator
+    public class BuildingOptionDecorator : BuildingDecorator
     {
         public BuildingOptionDecorator(IBuilding buildingBase, String optionId)
             : base(buildingBase)
