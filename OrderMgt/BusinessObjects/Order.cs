@@ -41,6 +41,7 @@ namespace OrderMgt
             _customerId = "";
             _created = DateTime.Now;
 
+            _totalPrice = 0;
             // Instantiate building for the order.
             // The BuildingFactory will return a NULL BUILDING object if we don't specify a valid building type
 
@@ -137,6 +138,7 @@ namespace OrderMgt
 
         public Decimal OptionsPrice
         {
+
             get
             {
                 if (_requiresRecalculation)
@@ -288,6 +290,7 @@ namespace OrderMgt
                 _framePrice = (Decimal)ds.Tables[0].Rows[0]["FramePrice"];
                 _created = (DateTime)ds.Tables[0].Rows[0]["Created"];
                 _status = (OrderStatus)Enum.Parse(typeof(OrderStatus), ds.Tables[0].Rows[0]["Status"].ToString());
+
 
                 if (string.IsNullOrEmpty(ds.Tables[0].Rows[0]["PlanningRejection"].ToString()))
                 {

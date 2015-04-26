@@ -10,6 +10,7 @@ namespace OrderMgt
      //private Customer _customer;
         private IOrder _order;
         private IOrderSearchGui _screen;
+        private OrderPresenter _orderPresenter;
 
         public OrderSearchPresenter(IOrderSearchGui screen, IOrder order)
         {
@@ -23,10 +24,18 @@ namespace OrderMgt
         {
         
         }
+        public void setOrderPresenter(OrderPresenter orderPresenter) 
+        {
+            _orderPresenter = orderPresenter;
+        }
 
         public void getOrderToUpdate()
         {
             _order = new Order(_screen.OrderId);
+            _orderPresenter.btnSearchOrder_Click(_order);
+            
+            
+            /*
             if (_order.Status == OrderStatus.Unsubmitted)
             {
             }
@@ -37,6 +46,7 @@ namespace OrderMgt
                 screen.ShowDialog();
                 _screen.Close();
             }
+            */
         }
     }
 }

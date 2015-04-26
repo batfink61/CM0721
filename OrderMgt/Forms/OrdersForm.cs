@@ -162,8 +162,14 @@ namespace OrderMgt
             // The Order search Button invokes as simple modal search dialogue
             // This enables the user to find a customer when they don't know the CustomerID
 
-            OrderSearchForm search = new OrderSearchForm();
-            search.ShowDialog();
+            IOrder order = new Order();
+            OrderSearchForm screen = new OrderSearchForm();
+            OrderSearchPresenter opresenter = new OrderSearchPresenter(screen, order);
+            opresenter.setOrderPresenter(_presenter);
+            screen.ShowDialog();
+
+            
+
          //   txtOrderId.Text = search.SelectedOrderNumber();
         }
 
