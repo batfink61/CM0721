@@ -11,16 +11,22 @@ namespace OrderMgtTest
     [TestClass]
     public class UnitTest_OrderManager
     {
-        [TestMethod]
-        public void WhenStatusIsUnsubmitted()
+        [TestInitialize]
+        public void TestInitialise()
         {
-            DateTime test = new DateTime();
-            test = DateTime.Now;
+
+        }
+
+        [TestMethod]
+        public void WhenStatusIsPlanningAndStatusIsToBeUpdated()
+        {
+            DateTime testTime = new DateTime();
+            testTime = DateTime.Now;
             OrderStatus status = new OrderStatus();
             Order order = new Order();
             order.Status = OrderStatus.Planning;
-            order.PlanningGranted = test;
-            order.PlanningInvoice = test;
+            order.PlanningGranted = testTime;
+            order.PlanningInvoice = testTime;
             
             //var order = new Mock<Order>();
             //order.SetupGet(m => m.Status).Returns(OrderStatus.Unsubmitted);
@@ -32,13 +38,34 @@ namespace OrderMgtTest
             status = OrderManager.Instance.ManageOrderUpdate(order);
             Assert.AreEqual(status, OrderStatus.Contract);
         }
-        
         [TestMethod]
-        public void WhenStatusIsPlaced()
+        public void WhenStatusIsPlanningAndStatusNotToBeUpdated()
         {
+            //setup
+            DateTime testTime = new DateTime();
+            testTime = DateTime.Now;
+            OrderStatus status = new OrderStatus();
             Order order = new Order();
-            OrderManager.Instance.ManageOrderUpdate(order);
+            order.Status = OrderStatus.Planning;
+            
+            //Test both null 
+            order.PlanningGranted = null;
+            order.PlanningInvoice = null;
+            status = OrderManager.Instance.ManageOrderUpdate(order);
+            Assert.AreEqual(status, OrderStatus.Planning);
+
+            order.PlanningGranted = null;
+            order.PlanningInvoice = testTime;
+            status = OrderManager.Instance.ManageOrderUpdate(order);
+            Assert.AreEqual(status, OrderStatus.Planning);
+
+            order.PlanningGranted = testTime;
+            order.PlanningInvoice = null;
+            status = OrderManager.Instance.ManageOrderUpdate(order);
+            Assert.AreEqual(status, OrderStatus.Planning);
+
         }
+
         
 
     }
