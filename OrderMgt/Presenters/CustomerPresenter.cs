@@ -76,20 +76,32 @@ namespace OrderMgt
         {
             _customer.Mobile = _screen.Mobile;
         }
-
+     
         public void btnSave_Click()
         {
-            try
-            {
-                _customer.Save();
-                _screen.CustomerId = _customer.CustomerId;
-                _screen.Close();
-            }
-            catch (Exception ex)
-            {
-                _screen.ShowMessage("Unable to save customer: " + ex.Message);
-            }
-
+            ValidateData();
+            _customer.Save();
+            _screen.CustomerId = _customer.CustomerId;
+            _screen.Close();
+        }
+        private void ValidateData()
+        {
+            if (_customer.Name== "")
+                throw new ArgumentOutOfRangeException("Name", "Name cannot be blank");
+            if (_customer.Address == "")
+                throw new ArgumentOutOfRangeException("Address", "Address cannot be blank");
+            if (_customer.Name.Length > 100)
+                throw new ArgumentOutOfRangeException("Name", "Name not be longer than 100 characters.");
+            if (_customer.Address.Length > 180)
+                throw new ArgumentOutOfRangeException("Address", "PostCode not be longer than 180 characters.");
+            if (_customer.Town.Length > 80)
+                throw new ArgumentOutOfRangeException("Town", "PostCode not be longer than 80 characters.");
+            if (_customer.PostCode.Length > 9)
+                throw new ArgumentOutOfRangeException("PostCode", "PostCode not be longer than 9 characters.");
+            if (_customer.Telephone.Length > 20)
+                throw new ArgumentOutOfRangeException("Telephone", "Telephone No. not be longer than 20 characters.");
+            if (_customer.Mobile.Length > 20)
+                throw new ArgumentOutOfRangeException("Mobile", "Mobile Number not be longer than 20 characters.");
         }
     }
 }
