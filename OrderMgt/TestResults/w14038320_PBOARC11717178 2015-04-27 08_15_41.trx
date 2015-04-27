@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ee731819-7338-4f85-b2c5-0c166a460579" name="w14038320@PBOARC11717178 2015-04-27 08:15:41" runUser="UNN\w14038320" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f9872536-3300-45e2-8d5a-1d6d5e11baff">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="w14038320_PBOARC11717178 2015-04-27 08_15_41">
+      <DeploymentItem filename="U:\GitHub\CM0721\OrderMgt\bin\Debug\OrderMgt.exe" />
+      <DeploymentItem filename="U:\GitHub\CM0721\OrderMgt\packages\Moq.4.2.1502.0911\lib\net40\Moq.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-04-27T08:15:41.5975868+01:00" queuing="2015-04-27T08:15:43.3477618+01:00" start="2015-04-27T08:15:43.3957666+01:00" finish="2015-04-27T08:15:45.6079878+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="11" executed="11" passed="8" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="228edb18-dd4e-0e75-de53-bd2a12d61734">
+      <Execution id="7c74d663-6492-40d6-bd24-6e739f54b61c" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_CustomerUI, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TestNewCustomerProperties" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="6bf3745b-d07d-c0fb-a967-f22fb3f1779e">
+      <Execution id="faf24681-8da0-4829-a4c1-f49ee762d53f" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_Customers, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestNewCustomerProperties" />
+    </UnitTest>
+    <UnitTest name="TestSaveEsistingCustomer" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="ab065cf5-b2d1-4ced-0a1e-1f310ae39ec3">
+      <Execution id="ea8196e6-539b-4793-a95f-1a2c340a0f32" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_Customers, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSaveEsistingCustomer" />
+    </UnitTest>
+    <UnitTest name="TestFactoryBuilding" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="c630fedc-6a96-2d59-7c5c-74b56b0fa827">
+      <Execution id="f4455c8c-8e07-4b86-a328-1af637af8faf" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_Buildings, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFactoryBuilding" />
+    </UnitTest>
+    <UnitTest name="TestCustomer_UI" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="76377bb8-9951-ce7d-8547-fef7bce6a585">
+      <Execution id="7ba34ac3-bc36-4eb8-905c-2b2bf5397730" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_CustomerUI, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCustomer_UI" />
+    </UnitTest>
+    <UnitTest name="TestBuildingOptions" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="1468cbdc-74e4-94fe-6379-083ba6fe1606">
+      <Execution id="196a6fe8-1ade-41a0-a2b3-d2369a503232" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_Buildings, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestBuildingOptions" />
+    </UnitTest>
+    <UnitTest name="TestSaveBlankCustomer" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="10f114f7-0ae1-c6eb-e834-977905e4bf3a">
+      <Execution id="ee1c4d7d-365a-4d7e-b8e4-1291b23c21ba" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_Customers, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestSaveBlankCustomer" />
+    </UnitTest>
+    <UnitTest name="WhenStatusIsPlanningAndStatusNotToBeUpdated" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="7607301f-19b0-0be0-86b3-b6d53e4760f2">
+      <Execution id="d336b7d8-06aa-4282-89fb-a0d1e36c8f43" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_OrderManager, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenStatusIsPlanningAndStatusNotToBeUpdated" />
+    </UnitTest>
+    <UnitTest name="WhenStatusIsPlanningAndStatusIsToBeUpdated" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="d70d2bdb-13b4-6db3-55db-c10f4e1d73dc">
+      <Execution id="5544a32a-61f3-4404-8ef1-a471aa839142" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_OrderManager, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WhenStatusIsPlanningAndStatusIsToBeUpdated" />
+    </UnitTest>
+    <UnitTest name="TestLoadCustomer" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="b4bb03be-fe26-9b5b-4a39-006ec97c94d8">
+      <Execution id="28e069c1-8011-48f8-a95d-06718ed21e8c" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_Customers, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestLoadCustomer" />
+    </UnitTest>
+    <UnitTest name="TestCreateionOfNullBuilding" storage="u:\github\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="06ee2c56-2a83-d6f3-1024-7ba7c2436e3c">
+      <Execution id="50f77f28-965f-42d8-9c17-78a3d7047d92" />
+      <TestMethod codeBase="U:/GitHub/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_Buildings, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCreateionOfNullBuilding" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="76377bb8-9951-ce7d-8547-fef7bce6a585" executionId="7ba34ac3-bc36-4eb8-905c-2b2bf5397730" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="228edb18-dd4e-0e75-de53-bd2a12d61734" executionId="7c74d663-6492-40d6-bd24-6e739f54b61c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6bf3745b-d07d-c0fb-a967-f22fb3f1779e" executionId="faf24681-8da0-4829-a4c1-f49ee762d53f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10f114f7-0ae1-c6eb-e834-977905e4bf3a" executionId="ee1c4d7d-365a-4d7e-b8e4-1291b23c21ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4bb03be-fe26-9b5b-4a39-006ec97c94d8" executionId="28e069c1-8011-48f8-a95d-06718ed21e8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab065cf5-b2d1-4ced-0a1e-1f310ae39ec3" executionId="ea8196e6-539b-4793-a95f-1a2c340a0f32" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d70d2bdb-13b4-6db3-55db-c10f4e1d73dc" executionId="5544a32a-61f3-4404-8ef1-a471aa839142" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7607301f-19b0-0be0-86b3-b6d53e4760f2" executionId="d336b7d8-06aa-4282-89fb-a0d1e36c8f43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06ee2c56-2a83-d6f3-1024-7ba7c2436e3c" executionId="50f77f28-965f-42d8-9c17-78a3d7047d92" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c630fedc-6a96-2d59-7c5c-74b56b0fa827" executionId="f4455c8c-8e07-4b86-a328-1af637af8faf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1468cbdc-74e4-94fe-6379-083ba6fe1606" executionId="196a6fe8-1ade-41a0-a2b3-d2369a503232" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7ba34ac3-bc36-4eb8-905c-2b2bf5397730" testId="76377bb8-9951-ce7d-8547-fef7bce6a585" testName="TestCustomer_UI" computerName="PBOARC11717178" duration="00:00:00.0876567" startTime="2015-04-27T08:15:43.4247695+01:00" endTime="2015-04-27T08:15:43.7277998+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ba34ac3-bc36-4eb8-905c-2b2bf5397730">
+    </UnitTestResult>
+    <UnitTestResult executionId="7c74d663-6492-40d6-bd24-6e739f54b61c" testId="228edb18-dd4e-0e75-de53-bd2a12d61734" testName="TestMethod1" computerName="PBOARC11717178" duration="00:00:00.0001396" startTime="2015-04-27T08:15:43.7348005+01:00" endTime="2015-04-27T08:15:43.7398010+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c74d663-6492-40d6-bd24-6e739f54b61c">
+    </UnitTestResult>
+    <UnitTestResult executionId="faf24681-8da0-4829-a4c1-f49ee762d53f" testId="6bf3745b-d07d-c0fb-a967-f22fb3f1779e" testName="TestNewCustomerProperties" computerName="PBOARC11717178" duration="00:00:00.0005481" startTime="2015-04-27T08:15:43.7468017+01:00" endTime="2015-04-27T08:15:43.7528023+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="faf24681-8da0-4829-a4c1-f49ee762d53f">
+    </UnitTestResult>
+    <UnitTestResult executionId="ee1c4d7d-365a-4d7e-b8e4-1291b23c21ba" testId="10f114f7-0ae1-c6eb-e834-977905e4bf3a" testName="TestSaveBlankCustomer" computerName="PBOARC11717178" duration="00:00:00.0008441" startTime="2015-04-27T08:15:43.7598030+01:00" endTime="2015-04-27T08:15:43.7648035+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee1c4d7d-365a-4d7e-b8e4-1291b23c21ba">
+    </UnitTestResult>
+    <UnitTestResult executionId="28e069c1-8011-48f8-a95d-06718ed21e8c" testId="b4bb03be-fe26-9b5b-4a39-006ec97c94d8" testName="TestLoadCustomer" computerName="PBOARC11717178" duration="00:00:00.2362062" startTime="2015-04-27T08:15:43.7718042+01:00" endTime="2015-04-27T08:15:44.0128283+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28e069c1-8011-48f8-a95d-06718ed21e8c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method OrderMgtTest.UnitTest_Customers.TestLoadCustomer threw exception: 
+System.Data.OleDb.OleDbException: 'C:\CM0721\OrderMgt\DataBase\OrderMgt.accdb' is not a valid path. Make sure that the path name is spelled correctly and that you are connected to the server on which the file resides.</Message>
+          <StackTrace>    at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at OrderMgt.CustomerGateway.Find(String customerId) in U:\GitHub\CM0721\OrderMgt\DataAccessObjects\CustomerGateway.cs:line 22
+   at OrderMgt.Customer.Initialise() in U:\GitHub\CM0721\OrderMgt\BusinessObjects\Customer.cs:line 106
+   at OrderMgt.Customer..ctor(String customerId) in U:\GitHub\CM0721\OrderMgt\BusinessObjects\Customer.cs:line 41
+   at OrderMgtTest.UnitTest_Customers.TestLoadCustomer() in U:\GitHub\CM0721\OrderMgtTest\UnitTest_Customers.cs:line 43
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ea8196e6-539b-4793-a95f-1a2c340a0f32" testId="ab065cf5-b2d1-4ced-0a1e-1f310ae39ec3" testName="TestSaveEsistingCustomer" computerName="PBOARC11717178" duration="00:00:01.3945439" startTime="2015-04-27T08:15:44.0248295+01:00" endTime="2015-04-27T08:15:45.4269697+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea8196e6-539b-4793-a95f-1a2c340a0f32">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method OrderMgtTest.UnitTest_Customers.TestSaveEsistingCustomer threw exception: 
+System.Data.OleDb.OleDbException: 'C:\CM0721\OrderMgt\DataBase\OrderMgt.accdb' is not a valid path. Make sure that the path name is spelled correctly and that you are connected to the server on which the file resides.</Message>
+          <StackTrace>    at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at OrderMgt.CustomerGateway.Find(String customerId) in U:\GitHub\CM0721\OrderMgt\DataAccessObjects\CustomerGateway.cs:line 22
+   at OrderMgt.Customer.Initialise() in U:\GitHub\CM0721\OrderMgt\BusinessObjects\Customer.cs:line 106
+   at OrderMgt.Customer..ctor(String customerId) in U:\GitHub\CM0721\OrderMgt\BusinessObjects\Customer.cs:line 41
+   at OrderMgtTest.UnitTest_Customers.TestSaveEsistingCustomer() in U:\GitHub\CM0721\OrderMgtTest\UnitTest_Customers.cs:line 57
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5544a32a-61f3-4404-8ef1-a471aa839142" testId="d70d2bdb-13b4-6db3-55db-c10f4e1d73dc" testName="WhenStatusIsPlanningAndStatusIsToBeUpdated" computerName="PBOARC11717178" duration="00:00:00.0054037" startTime="2015-04-27T08:15:45.4369707+01:00" endTime="2015-04-27T08:15:45.4489719+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5544a32a-61f3-4404-8ef1-a471aa839142">
+    </UnitTestResult>
+    <UnitTestResult executionId="d336b7d8-06aa-4282-89fb-a0d1e36c8f43" testId="7607301f-19b0-0be0-86b3-b6d53e4760f2" testName="WhenStatusIsPlanningAndStatusNotToBeUpdated" computerName="PBOARC11717178" duration="00:00:00.0004349" startTime="2015-04-27T08:15:45.4579728+01:00" endTime="2015-04-27T08:15:45.4629733+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d336b7d8-06aa-4282-89fb-a0d1e36c8f43">
+    </UnitTestResult>
+    <UnitTestResult executionId="50f77f28-965f-42d8-9c17-78a3d7047d92" testId="06ee2c56-2a83-d6f3-1024-7ba7c2436e3c" testName="TestCreateionOfNullBuilding" computerName="PBOARC11717178" duration="00:00:00.0003976" startTime="2015-04-27T08:15:45.4699740+01:00" endTime="2015-04-27T08:15:45.4749745+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50f77f28-965f-42d8-9c17-78a3d7047d92">
+    </UnitTestResult>
+    <UnitTestResult executionId="f4455c8c-8e07-4b86-a328-1af637af8faf" testId="c630fedc-6a96-2d59-7c5c-74b56b0fa827" testName="TestFactoryBuilding" computerName="PBOARC11717178" duration="00:00:00.0007935" startTime="2015-04-27T08:15:45.4839754+01:00" endTime="2015-04-27T08:15:45.4899760+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4455c8c-8e07-4b86-a328-1af637af8faf">
+    </UnitTestResult>
+    <UnitTestResult executionId="196a6fe8-1ade-41a0-a2b3-d2369a503232" testId="1468cbdc-74e4-94fe-6379-083ba6fe1606" testName="TestBuildingOptions" computerName="PBOARC11717178" duration="00:00:00.0443838" startTime="2015-04-27T08:15:45.4969767+01:00" endTime="2015-04-27T08:15:45.5469817+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="196a6fe8-1ade-41a0-a2b3-d2369a503232">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method OrderMgtTest.UnitTest_Buildings.TestBuildingOptions threw exception: 
+System.IndexOutOfRangeException: Cannot find table 0.</Message>
+          <StackTrace>    at System.Data.DataTableCollection.get_Item(Int32 index)
+   at OrderMgt.BuildingOptionDecorator..ctor(IBuilding buildingBase, String optionId) in U:\GitHub\CM0721\OrderMgt\BusinessObjects\BuildingDecorators\BuildingOptionDecorator.cs:line 15
+   at OrderMgtTest.UnitTest_Buildings.TestBuildingOptions() in U:\GitHub\CM0721\OrderMgtTest\UnitTest_Buildings.cs:line 48
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

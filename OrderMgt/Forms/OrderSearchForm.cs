@@ -46,5 +46,10 @@ namespace OrderMgt
             MessageBox.Show(message);
         }
 
+        private void OrderSearchForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

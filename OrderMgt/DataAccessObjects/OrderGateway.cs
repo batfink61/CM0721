@@ -113,7 +113,7 @@ namespace OrderMgt
                 try
                 {
                     conn.Open();
-                    OleDbCommand cmd = new OleDbCommand("SELECT id,customerid FROM orders", conn);
+                    OleDbCommand cmd = new OleDbCommand("SELECT id,customerid, BuildingType, FramePrice, Created, Status FROM orders", conn);
                     OleDbDataAdapter da = new OleDbDataAdapter(cmd);
                     da.Fill(ds);
                 }

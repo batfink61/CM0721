@@ -70,6 +70,7 @@
             this.Name = "OrderSearchForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderSearchForm";
+            this.Load += new System.EventHandler(this.OrderSearchForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

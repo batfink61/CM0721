@@ -8,11 +8,11 @@ C:\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.pdb
 C:\CM0721\OrderMgtTest\bin\Debug\Moq.dll
 C:\CM0721\OrderMgtTest\bin\Debug\Moq.xml
 U:\GitHub\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.csprojResolveAssemblyReference.cache
-U:\GitHub\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.dll
 U:\GitHub\CM0721\OrderMgtTest\bin\Debug\OrderMgtTest.dll
 U:\GitHub\CM0721\OrderMgtTest\bin\Debug\OrderMgtTest.pdb
 U:\GitHub\CM0721\OrderMgtTest\bin\Debug\Moq.dll
 U:\GitHub\CM0721\OrderMgtTest\bin\Debug\OrderMgt.exe
 U:\GitHub\CM0721\OrderMgtTest\bin\Debug\OrderMgt.pdb
 U:\GitHub\CM0721\OrderMgtTest\bin\Debug\Moq.xml
+U:\GitHub\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.dll
 U:\GitHub\CM0721\OrderMgtTest\obj\Debug\OrderMgtTest.pdb
