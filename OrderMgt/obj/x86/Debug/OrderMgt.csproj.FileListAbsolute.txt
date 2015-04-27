@@ -50,3 +50,4 @@ U:\GitHub\CM0721\OrderMgt\bin\Debug\Moq.xml
 U:\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.exe
 U:\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.pdb
 U:\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.ChooseOrdersForm.resources
+U:\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csprojResolveAssemblyReference.cache

@@ -41,7 +41,6 @@ namespace OrderMgt
             _customerId = "";
             _created = DateTime.Now;
 
-            _totalPrice = 0;
             // Instantiate building for the order.
             // The BuildingFactory will return a NULL BUILDING object if we don't specify a valid building type
 

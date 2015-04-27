@@ -40,15 +40,15 @@ namespace OrderMgt
             lstOrders.Items.Clear();
             foreach (DataRow dr in _orderDataSet.Tables[0].Rows)
             {
-                lstOrders.Items.Add(String.Format("{0} {1} [{2}]", dr["BuildingType"].ToString(), dr["FramePrice"].ToString(), dr["id"].ToString()));
+                lstOrders.Items.Add(String.Format("{0} {1} {2} {3} [{4}] ", dr["BuildingType"].ToString(), dr["FramePrice"].ToString(), dr["Created"].ToString(), dr["Status"].ToString(), dr["id"].ToString()));
             }
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
             SetOrderId();
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             _orderId = "";
             this.Close();
@@ -63,10 +63,14 @@ namespace OrderMgt
                 if (p2 > p1)
                 {
                     _orderId = selectedItem.Substring(p1 + 1, p2 - p1 - 1);
-                    MessageBox.Show(_orderId.ToString());
-                    //this.Close();
+                    this.Close();
                 }
             }
+        }
+
+        private void stOrders_DoubleClick(object sender, EventArgs e)
+        {
+            SetOrderId();
         }
 
 

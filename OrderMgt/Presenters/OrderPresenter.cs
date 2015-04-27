@@ -75,9 +75,10 @@ namespace OrderMgt
             _screen.CustomerId = _order.CustomerId;
             _screen.BuildingType = _order.BuildingType.ToString();
             _screen.FramePrice = String.Format("{0:0.00}", _order.FramePrice);
+            //Todo
             //_screen.OptionsPrice = String.Format("{0:0.00}", _order.OptionsPrice);
             //_screen.VAT = String.Format("{0:0.00}", _order.Vat);
-            //_screen.TotalPrice = String.Format("{0:0.00}", _order.TotalPrice);
+            _screen.TotalPrice = String.Format("{0:0.00}", _order.TotalPrice);
 
             _screen.EnableControls(true);
 

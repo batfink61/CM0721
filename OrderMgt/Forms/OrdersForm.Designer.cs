@@ -67,7 +67,6 @@
             this.txtFramePrice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.picSidePanel = new System.Windows.Forms.PictureBox();
-            this.listOrders = new System.Windows.Forms.Button();
             this.grpOrders.SuspendLayout();
             this.grpCustomer.SuspendLayout();
             this.grpProperty.SuspendLayout();
@@ -77,7 +76,6 @@
             // 
             // grpOrders
             // 
-            this.grpOrders.Controls.Add(this.listOrders);
             this.grpOrders.Controls.Add(this.btnNewOrder);
             this.grpOrders.Controls.Add(this.lblOrder);
             this.grpOrders.Controls.Add(this.txtOrderId);
@@ -458,16 +456,6 @@
             this.picSidePanel.TabIndex = 7;
             this.picSidePanel.TabStop = false;
             // 
-            // listOrders
-            // 
-            this.listOrders.Location = new System.Drawing.Point(462, 30);
-            this.listOrders.Name = "listOrders";
-            this.listOrders.Size = new System.Drawing.Size(75, 23);
-            this.listOrders.TabIndex = 11;
-            this.listOrders.Text = "List Orders";
-            this.listOrders.UseVisualStyleBackColor = true;
-            this.listOrders.Click += new System.EventHandler(this.listOrders_Click);
-            // 
             // OrdersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -535,6 +523,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Option;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.Button listOrders;
     }
 }
