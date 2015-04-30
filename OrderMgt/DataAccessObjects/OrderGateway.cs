@@ -9,6 +9,7 @@ namespace OrderMgt
 {
     public static class OrderGateway
     {
+       
         public static DataSet Find(String orderNumber)
         {
             // Return the dataset associated with a single instance of am order
@@ -126,6 +127,32 @@ namespace OrderMgt
                 }
             }
             return ds;
+        }
+        public static String FindCustomerOrder(String customerId)
+        {
+            // Return the dataset associated with a Customer
+
+            DataSet ds = new DataSet();
+            using (OleDbConnection conn = new OleDbConnection(Properties.Settings.Default.ordersdb.ToString()))
+            {
+                conn.Open();
+                OleDbCommand cmd = new OleDbCommand(String.Format("SELECT * FROM orders WHERE CustomerId={0}", customerId), conn);
+                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                da.Fill(ds);
+                da.FillSchema(ds, SchemaType.Source);
+                conn.Close();
+            }
+            return ds.Tables[0].Rows[0]["ID"].ToString();
+        }
+        public static DataSet ListCustomerOrders()
+        {
+            String sql = "select o.ID, c.Name, o.BuildingType, o.FramePrice FROM Orders o INNER JOIN Customers c on o.CustomerId = c.ID";
+            OleDbConnection connection = new OleDbConnection(Properties.Settings.Default.ordersdb.ToString());
+            OleDbDataAdapter da = new OleDbDataAdapter(sql, connection);
+            DataSet custOrders = new DataSet();
+            da.Fill(custOrders);
+
+            return custOrders;
         }
     }
 }

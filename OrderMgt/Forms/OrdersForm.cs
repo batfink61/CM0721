@@ -144,33 +144,32 @@ namespace OrderMgt
 
         private void txtCustomerId_TextChanged(object sender, EventArgs e)
         {
-            _presenter.txtCustomerId_TextChanged();
+            //MessageBox.Show(OrderGateway.FindCustomerOrder(txtCustomerId.Text));
         }
 
         private void btnCustomerSearch_Click(object sender, EventArgs e)
         {
             // The Customer search Button invokes as simple modal search dialogue
-            // This enables the user to find a customer when they don't know the CustomerID
+            // This enables the user to find a customer's Order when they don't know the CustomerID
 
-            CustomerSearchForm search = new CustomerSearchForm();
+            CustomerOrderSearchForm search = new CustomerOrderSearchForm();
             search.ShowDialog();
-            txtCustomerId.Text = search.SelectedCustomerId();
+            //txtCustomerId.Text = search.SelectedCustomerId();
+            txtOrderId.Text = search.SelectedOrderId();
+            _presenter.txtCustomerId_TextChanged();
         }
 
         private void btnOrderSearch_Click(object sender, EventArgs e)
         {
-            // The Order search Button invokes as simple modal search dialogue
-            // This enables the user to find a customer when they don't know the CustomerID
-
+            // The Order search Button invokes a dialog box containing a list of orders
+            // This enables the user to find an order when they don't know the OrderID
             //OrderSearchForm search = new OrderSearchForm();
             //search.ShowDialog();
 
             ChooseOrdersForm search = new ChooseOrdersForm();
             search.ShowDialog();
             txtOrderId.Text = search.SelectedOrderId();
-            
-
-           //txtOrderId.Text = search.SelectedOrderNumber();
+            _presenter.txtCustomerId_TextChanged();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -180,7 +179,15 @@ namespace OrderMgt
 
         private void txtOrderNumber_TextChanged(object sender, EventArgs e)
         {
-            _presenter.txtOrderNumber_TextChanged();
+            int number = 0;
+            if ((txtOrderId.Text != string.Empty) && (!int.TryParse(txtOrderId.Text, out number)))
+            {
+                MessageBox.Show("Please enter a valid Order ID");
+            }
+            else if (txtOrderId.Text == string.Empty)
+                return;
+            else
+                _presenter.txtOrderNumber_TextChanged();
         }
 
         private void cboBuildingType_SelectedIndexChanged(object sender, EventArgs e)

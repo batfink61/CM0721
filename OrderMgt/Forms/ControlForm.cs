@@ -72,5 +72,10 @@ namespace OrderMgt
         {
 
         }
+
+        private void toolStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

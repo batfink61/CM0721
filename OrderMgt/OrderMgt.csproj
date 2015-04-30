@@ -80,6 +80,18 @@
     <Compile Include="Forms\ChooseOrdersForm.Designer.cs">
       <DependentUpon>ChooseOrdersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CustomerOrderSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerOrderSearchForm.Designer.cs">
+      <DependentUpon>CustomerOrderSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomerSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerSearchForm.Designer.cs">
+      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\NewOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,12 +124,6 @@
     <Compile Include="Interfaces\IUpdateOrderGui.cs" />
     <Compile Include="Mocks\MockNewOrderForm.cs" />
     <Compile Include="Presenters\CustomerPresenter.cs" />
-    <Compile Include="Forms\CustomerSearchForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CustomerSearchForm.Designer.cs">
-      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\ControlForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,11 +149,14 @@
     <EmbeddedResource Include="Forms\ChooseOrdersForm.resx">
       <DependentUpon>ChooseOrdersForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CustomerSearchForm.resx">
-      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ControlForm.resx">
       <DependentUpon>ControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerOrderSearchForm.resx">
+      <DependentUpon>CustomerOrderSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomerSearchForm.resx">
+      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomersForm.resx">
       <DependentUpon>CustomersForm.cs</DependentUpon>

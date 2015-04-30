@@ -8,9 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
-// This is a simple Customer Search modal dialogue.
-// It can be invoked from anywhere and the 'SelectedCustomerId' method returns the selected customer
-
 namespace OrderMgt
 {
     public partial class CustomerSearchForm : Form
@@ -23,14 +20,15 @@ namespace OrderMgt
             InitializeComponent();
         }
 
-        private void frmCustomerSearch_Load(object sender, EventArgs e)
+        private void CustomerSearchForm_Load(object sender, EventArgs e)
         {
+
             _customerId = "";
             _customerDataSet = CustomerGateway.list();
 
             RefreshCustomerList();
+        
         }
-
         public String SelectedCustomerId()
         {
             return _customerId;
@@ -83,6 +81,5 @@ namespace OrderMgt
                 }
             }
         }
-
     }
 }

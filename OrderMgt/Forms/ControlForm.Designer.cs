@@ -34,13 +34,13 @@
             this.btnNewOrder = new System.Windows.Forms.ToolStripButton();
             this.btnCustomers = new System.Windows.Forms.ToolStripButton();
             this.btnOrders = new System.Windows.Forms.ToolStripButton();
+            this.btnUpdateOrder = new System.Windows.Forms.ToolStripButton();
             this.btnUpdateFactory = new System.Windows.Forms.ToolStripButton();
             this.btnDelivery = new System.Windows.Forms.ToolStripButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnUpdateOrder = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(663, 46);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked_1);
             // 
             // btnNewOrder
             // 
@@ -96,6 +97,18 @@
             this.btnOrders.Text = "Orders";
             this.btnOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
+            // 
+            // btnUpdateOrder
+            // 
+            this.btnUpdateOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateOrder.Image")));
+            this.btnUpdateOrder.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnUpdateOrder.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnUpdateOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnUpdateOrder.Name = "btnUpdateOrder";
+            this.btnUpdateOrder.Size = new System.Drawing.Size(82, 43);
+            this.btnUpdateOrder.Text = "Update Order";
+            this.btnUpdateOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnUpdateOrder.Click += new System.EventHandler(this.btnUpdateOrder_Click);
             // 
             // btnUpdateFactory
             // 
@@ -149,18 +162,6 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // btnUpdateOrder
-            // 
-            this.btnUpdateOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateOrder.Image")));
-            this.btnUpdateOrder.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnUpdateOrder.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnUpdateOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnUpdateOrder.Name = "btnUpdateOrder";
-            this.btnUpdateOrder.Size = new System.Drawing.Size(82, 43);
-            this.btnUpdateOrder.Text = "Update Order";
-            this.btnUpdateOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnUpdateOrder.Click += new System.EventHandler(this.btnUpdateOrder_Click);
             // 
             // frmDialogue
             // 
