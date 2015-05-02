@@ -28,25 +28,22 @@ namespace OrderMgt
      
         }
      
-       public String SelectedOrderId()
+        public String SelectedOrderId()
         {
             return _orderId;
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            RefreshCustomerOrderList();
         }
 
         private void RefreshCustomerOrderList()
         {
             // Should use LINQ here to filter results
 
-            lstCustomers.Items.Clear();
+            vwOrders.Rows.Clear();
             foreach (DataRow dr in _customerOrderDataSet.Tables[0].Rows)
             {
                 if (dr["name"].ToString().ToLower().Contains(txtCustomerName.Text.ToLower()))
-                    lstCustomers.Items.Add(String.Format("{0} {1} {2} [{3}]", dr["name"].ToString(), dr["BuildingType"].ToString(), dr["FramePrice"].ToString(), dr["id"].ToString()));
+                    vwOrders.Rows.Add(new String[] { dr["id"].ToString(), dr["customerid"].ToString(), dr["name"].ToString(), dr["BuildingType"].ToString() });
+
+                    //lstCustomers.Items.Add(String.Format("{0} {1} {2} [{3}]", dr["name"].ToString(), dr["BuildingType"].ToString(), dr["FramePrice"].ToString(), dr["id"].ToString()));
             }
         }
 
@@ -59,6 +56,7 @@ namespace OrderMgt
         private void btnOK_Click(object sender, EventArgs e)
         {
             SetOrderId();
+            this.Close();
         }
 
         private void lstCustomers_DoubleClick(object sender, EventArgs e)
@@ -68,17 +66,23 @@ namespace OrderMgt
 
         private void SetOrderId()
         {
-            String selectedItem = lstCustomers.SelectedItem.ToString();
-            int p1 = selectedItem.IndexOf("[");
-            if (p1 > 0)
-            {
-                int p2 = selectedItem.IndexOf("]");
-                if (p2 > p1)
-                {
-                    _orderId = selectedItem.Substring(p1 + 1, p2 - p1 - 1);
-                    this.Close();
-                }
-            }
+            _orderId = vwOrders.SelectedRows[0].Cells[0].Value.ToString();
+         }
+
+        private void txtCustomerName_TextChanged(object sender, EventArgs e)
+        {
+            RefreshCustomerOrderList();
+        }
+
+        private void lstCustomers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vwOrders_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SetOrderId();
+            this.Close();
         }
     }
 }

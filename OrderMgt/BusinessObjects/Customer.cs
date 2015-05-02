@@ -7,6 +7,8 @@ using System.Data;
 using System.Configuration;
 
 // Customer class - defines a single instance of a customer
+// Two constructors allow an existing or new customer to be instanciated.
+
 namespace OrderMgt
 {
     public class Customer
@@ -125,6 +127,7 @@ namespace OrderMgt
             ValidateData();
 
             // Data is valid at this point so we can safely attempt to save in DB
+            // Use Gateway class for all I/O
 
             if (_isNewCustomer)
                _customerId = CustomerGateway.Insert(_name, _address, _town, _postcode, _telephone, _mobile);

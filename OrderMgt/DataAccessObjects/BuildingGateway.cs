@@ -5,6 +5,8 @@ using System.Text;
 using System.Data;
 using System.Data.OleDb;
 
+// This static class handles all SQL I/O for the building tables using Facade pattern.
+
 namespace OrderMgt
 {
     public static class BuildingGateway

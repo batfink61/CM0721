@@ -68,12 +68,6 @@
     <Compile Include="DataAccessObjects\OrderGateway.cs" />
     <Compile Include="Enumerations\BuildingType.cs" />
     <Compile Include="Enumerations\OrderStatus.cs" />
-    <Compile Include="Forms\BuildingOptionsSelectForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BuildingOptionsSelectForm.Designer.cs">
-      <DependentUpon>BuildingOptionsSelectForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\ChooseOrdersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,32 +77,20 @@
     <Compile Include="Forms\CustomerOrderSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CustomerOrderSearchForm.Designer.cs">
+    <Compile Include="Forms\CustomerOrderSearchForm.designer.cs">
       <DependentUpon>CustomerOrderSearchForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CustomerSearchForm.cs">
+    <Compile Include="Forms\EditOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CustomerSearchForm.Designer.cs">
-      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\NewOrderForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\NewOrderForm.Designer.cs">
-      <DependentUpon>NewOrderForm.cs</DependentUpon>
+    <Compile Include="Forms\EditOrderForm.Designer.cs">
+      <DependentUpon>EditOrderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\OrderSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\OrderSearchForm.Designer.cs">
+    <Compile Include="Forms\OrderSearchForm.designer.cs">
       <DependentUpon>OrderSearchForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\OrdersForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\OrdersForm.Designer.cs">
-      <DependentUpon>OrdersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UpdateOrderForm.cs">
       <SubType>Form</SubType>
@@ -116,14 +98,27 @@
     <Compile Include="Forms\UpdateOrderForm.Designer.cs">
       <DependentUpon>UpdateOrderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UpdateOrderProductionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateOrderProductionForm.Designer.cs">
+      <DependentUpon>UpdateOrderProductionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\IBuilding.cs" />
-    <Compile Include="Interfaces\INewOrderGui.cs" />
+    <Compile Include="Interfaces\IEditOrderGui.cs" />
     <Compile Include="Interfaces\IOrder.cs" />
     <Compile Include="Interfaces\IOrderGui.cs" />
     <Compile Include="Interfaces\IOrderSearchGui.cs" />
     <Compile Include="Interfaces\IUpdateOrderGui.cs" />
+    <Compile Include="Interfaces\IUpdateOrderProduction.cs" />
     <Compile Include="Mocks\MockNewOrderForm.cs" />
     <Compile Include="Presenters\CustomerPresenter.cs" />
+    <Compile Include="Forms\CustomerSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerSearchForm.Designer.cs">
+      <DependentUpon>CustomerSearchForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ControlForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,20 +132,16 @@
       <DependentUpon>CustomersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\ICustomerGui.cs" />
-    <Compile Include="Presenters\NewOrderPresenter.cs" />
+    <Compile Include="Presenters\EditOrderPresenter.cs" />
     <Compile Include="Presenters\OrderPresenter.cs" />
     <Compile Include="Presenters\OrderSearchPresenter.cs" />
     <Compile Include="Presenters\UpdateOrderPresenter.cs" />
+    <Compile Include="Presenters\UpdateOrderProductionPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\BuildingOptionsSelectForm.resx">
-      <DependentUpon>BuildingOptionsSelectForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Settings.cs" />
     <EmbeddedResource Include="Forms\ChooseOrdersForm.resx">
       <DependentUpon>ChooseOrdersForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ControlForm.resx">
-      <DependentUpon>ControlForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerOrderSearchForm.resx">
       <DependentUpon>CustomerOrderSearchForm.cs</DependentUpon>
@@ -158,20 +149,23 @@
     <EmbeddedResource Include="Forms\CustomerSearchForm.resx">
       <DependentUpon>CustomerSearchForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ControlForm.resx">
+      <DependentUpon>ControlForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomersForm.resx">
       <DependentUpon>CustomersForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\NewOrderForm.resx">
-      <DependentUpon>NewOrderForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EditOrderForm.resx">
+      <DependentUpon>EditOrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OrderSearchForm.resx">
       <DependentUpon>OrderSearchForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\OrdersForm.resx">
-      <DependentUpon>OrdersForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateOrderForm.resx">
       <DependentUpon>UpdateOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateOrderProductionForm.resx">
+      <DependentUpon>UpdateOrderProductionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -209,7 +203,9 @@
   <ItemGroup>
     <None Include="Images\neworder.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Images\builders.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -5,6 +5,8 @@ using System.Text;
 using System.Collections;
 
 // Building factory class - responsible for creating building objects using the Factory Pattern.
+// This is a singleton.
+// All building types must register with the factory first.
 
 namespace OrderMgt
 {
@@ -51,6 +53,8 @@ namespace OrderMgt
                 return NULL;
             }
         }
+
+        // Define a NULL building type so that client code continues to work even when no real concrete building defined
 
         private class NullBuilding : FrameBase, IBuilding
         {

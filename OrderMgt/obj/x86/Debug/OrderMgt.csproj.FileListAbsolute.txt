@@ -19,13 +19,10 @@ C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.exe
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.pdb
 C:\CM0721\OrderMgt\bin\Debug\OrderMgt.exe
 C:\CM0721\OrderMgt\bin\Debug\OrderMgt.pdb
-C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.BuildingOptionsSelectForm.resources
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomerSearchForm.resources
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.frmDialogue.resources
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomersForm.resources
-C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.NewOrderForm.resources
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.OrderSearchForm.resources
-C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.OrdersForm.resources
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.UpdateOrderForm.resources
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.Properties.Resources.resources
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csproj.GenerateResource.Cache
@@ -50,24 +47,29 @@ U:\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.exe
 U:\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.pdb
 U:\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.ChooseOrdersForm.resources
 U:\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csprojResolveAssemblyReference.cache
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\bin\Debug\OrderMgt.exe.config
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.exe
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.pdb
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\bin\Debug\OrderMgt.exe
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\bin\Debug\OrderMgt.pdb
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\bin\Debug\Moq.dll
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\bin\Debug\Moq.xml
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csprojResolveAssemblyReference.cache
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.BuildingOptionsSelectForm.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.ChooseOrdersForm.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomerSearchForm.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.frmDialogue.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomersForm.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.NewOrderForm.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.OrderSearchForm.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.OrdersForm.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.UpdateOrderForm.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.Properties.Resources.resources
-C:\Users\Greg\Documents\GitHub\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csproj.GenerateResource.Cache
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.ChooseOrdersForm.resources
+C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.EditOrderForm.resources
 C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomerOrderSearchForm.resources
+C:\Users\Greg\Desktop\OrderMgt\bin\Debug\OrderMgt.exe.config
+C:\Users\Greg\Desktop\OrderMgt\obj\x86\Debug\OrderMgt.exe
+C:\Users\Greg\Desktop\OrderMgt\obj\x86\Debug\OrderMgt.pdb
+C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.UpdateOrderProductionForm.resources
+C:\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csprojResolveAssemblyReference.cache
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\OrderMgt.exe.config
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.exe
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.pdb
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\OrderMgt.exe
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\OrderMgt.pdb
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\Moq.dll
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\Moq.xml
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.ChooseOrdersForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomerOrderSearchForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomerSearchForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.frmDialogue.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.CustomersForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.EditOrderForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.OrderSearchForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.UpdateOrderForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.UpdateOrderProductionForm.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.Properties.Resources.resources
+U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\obj\x86\Debug\OrderMgt.csproj.GenerateResource.Cache

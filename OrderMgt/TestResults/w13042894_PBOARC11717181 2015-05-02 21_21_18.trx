@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="86d2a5fb-4595-40a9-b184-be0fb981021a" name="w13042894@PBOARC11717181 2015-05-02 21:21:18" runUser="UNN\w13042894" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f9872536-3300-45e2-8d5a-1d6d5e11baff">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="w13042894_PBOARC11717181 2015-05-02 21_21_18">
+      <DeploymentItem filename="U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\packages\Moq.4.2.1502.0911\lib\net40\Moq.dll" />
+      <DeploymentItem filename="U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\OrderMgt.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-05-02T21:21:18.8759925+01:00" queuing="2015-05-02T21:21:18.9419991+01:00" start="2015-05-02T21:21:18.9530002+01:00" finish="2015-05-02T21:21:21.7862835+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="UpdateOrderProduction_Delivery_Test" storage="u:\my documents\gregomebije\computer_science\client2\oop\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="87f21028-f68c-1382-a0ca-658e0597d69f">
+      <Execution id="a1d107f1-6d65-4a20-9a18-be36de955d31" />
+      <TestMethod codeBase="U:/My Documents/gregomebije/computer_science/client2/oop/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_ProductionDelivery, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateOrderProduction_Delivery_Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="87f21028-f68c-1382-a0ca-658e0597d69f" executionId="a1d107f1-6d65-4a20-9a18-be36de955d31" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a1d107f1-6d65-4a20-9a18-be36de955d31" testId="87f21028-f68c-1382-a0ca-658e0597d69f" testName="UpdateOrderProduction_Delivery_Test" computerName="PBOARC11717181" duration="00:00:02.5606767" startTime="2015-05-02T21:21:18.9710020+01:00" endTime="2015-05-02T21:21:21.7442793+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1d107f1-6d65-4a20-9a18-be36de955d31">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method OrderMgtTest.UnitTest_ProductionDelivery.UpdateOrderProduction_Delivery_Test threw exception: 
+System.Data.OleDb.OleDbException: 'C:\CM0721\OrderMgt\DataBase\OrderMgt.accdb' is not a valid path. Make sure that the path name is spelled correctly and that you are connected to the server on which the file resides.</Message>
+          <StackTrace>    at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at OrderMgt.OrderGateway.getLastOrderInProduction() in U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\DataAccessObjects\OrderGateway.cs:line 156
+   at OrderMgt.UpdateOrderProductionPresenter.populateLastOrder() in U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\Presenters\UpdateOrderProductionPresenter.cs:line 21
+   at OrderMgt.UpdateOrderProductionPresenter..ctor(IUpdateOrderProduction screen) in U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\Presenters\UpdateOrderProductionPresenter.cs:line 16
+   at OrderMgtTest.UnitTest_ProductionDelivery.UpdateOrderProduction_Delivery_Test() in U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgtTest\UnitTest_ProductionDelivery.cs:line 17
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

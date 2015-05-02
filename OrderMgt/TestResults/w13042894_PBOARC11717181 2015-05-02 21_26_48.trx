@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4874d8b0-6884-414e-8683-8a1bbe04a052" name="w13042894@PBOARC11717181 2015-05-02 21:26:48" runUser="UNN\w13042894" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f9872536-3300-45e2-8d5a-1d6d5e11baff">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="w13042894_PBOARC11717181 2015-05-02 21_26_48">
+      <DeploymentItem filename="U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\packages\Moq.4.2.1502.0911\lib\net40\Moq.dll" />
+      <DeploymentItem filename="U:\My Documents\gregomebije\computer_science\client2\oop\CM0721\OrderMgt\bin\Debug\OrderMgt.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-05-02T21:26:48.3722720+01:00" queuing="2015-05-02T21:26:48.4602456+01:00" start="2015-05-02T21:26:48.4682432+01:00" finish="2015-05-02T21:26:48.9980842+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="UpdateOrderProduction_Delivery_Test" storage="u:\my documents\gregomebije\computer_science\client2\oop\cm0721\ordermgttest\bin\debug\ordermgttest.dll" id="87f21028-f68c-1382-a0ca-658e0597d69f">
+      <Execution id="5dffedf4-12a2-42e5-853d-a8407dba1c81" />
+      <TestMethod codeBase="U:/My Documents/gregomebije/computer_science/client2/oop/CM0721/OrderMgtTest/bin/Debug/OrderMgtTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="OrderMgtTest.UnitTest_ProductionDelivery, OrderMgtTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateOrderProduction_Delivery_Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="87f21028-f68c-1382-a0ca-658e0597d69f" executionId="5dffedf4-12a2-42e5-853d-a8407dba1c81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5dffedf4-12a2-42e5-853d-a8407dba1c81" testId="87f21028-f68c-1382-a0ca-658e0597d69f" testName="UpdateOrderProduction_Delivery_Test" computerName="PBOARC11717181" duration="00:00:00.2144399" startTime="2015-05-02T21:26:48.4862378+01:00" endTime="2015-05-02T21:26:48.9411013+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5dffedf4-12a2-42e5-853d-a8407dba1c81">
+    </UnitTestResult>
+  </Results>
+</TestRun>

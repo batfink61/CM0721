@@ -20,6 +20,8 @@ namespace OrderMgt
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
+            // Invoke Customer maintenance form using passive view
+
             CustomersForm screen = new CustomersForm();
             CustomerPresenter presenter = new CustomerPresenter(screen);
             screen.ShowDialog();
@@ -32,21 +34,58 @@ namespace OrderMgt
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
-            OrdersForm screen = new OrdersForm();
-            OrderPresenter presenter = new OrderPresenter(screen);
+            // invoke order search form then pass result to appropriate editing form.
+
+            CustomerOrderSearchForm srch = new CustomerOrderSearchForm();
+            srch.ShowDialog();
+
+            String orderId = srch.SelectedOrderId();
+
+            if (orderId != "")
+            {
+                IOrder order = new Order(orderId);
+
+                if (order.Status == OrderStatus.Unsubmitted)
+                    InvokeUnsubmittedOrderForm(order);
+                else
+                    InvokeSubmittedOrderForm(order);
+            }
+        }
+
+        private void InvokeUnsubmittedOrderForm(IOrder order)
+        {
+            // Invoke unsubmitted order maintenance form.
+            // Uses passive-view with dependancy injection
+
+            EditOrderForm screen = new EditOrderForm();
+            EditOrderPresenter presenter = new EditOrderPresenter(screen, order);
             screen.ShowDialog();
         }
 
+        private void InvokeSubmittedOrderForm(IOrder order)
+        {
+            // Invoke unsubmitted order maintenance form.
+            // Uses passive-view with dependancy injection
+
+            UpdateOrderForm screen = new UpdateOrderForm();
+            UpdateOrderPresenter presenter = new UpdateOrderPresenter(screen, order);
+            screen.ShowDialog();
+        }
+        
         private void btnUpdateFactory_Click(object sender, EventArgs e)
         {
-
+            UpdateOrderProductionForm screen = new UpdateOrderProductionForm();
+            UpdateOrderProductionPresenter presenter = new UpdateOrderProductionPresenter(screen);
+            screen.ShowDialog();
         }
 
         private void btnNewOrder_Click(object sender, EventArgs e)
         {
+            // invoke EditOrders form using passive view for a new order.
+
             IOrder order = new Order();
-            NewOrderForm screen = new NewOrderForm();
-            NewOrderPresenter presenter = new NewOrderPresenter(screen, order);
+            EditOrderForm screen = new EditOrderForm();
+            EditOrderPresenter presenter = new EditOrderPresenter(screen, order);
             screen.ShowDialog();
         }
 
@@ -60,20 +99,7 @@ namespace OrderMgt
 
         }
 
-        private void btnUpdateOrder_Click(object sender, EventArgs e)
-        {
-            IOrder order = new Order();
-            OrderSearchForm screen = new OrderSearchForm();
-            OrderSearchPresenter presenter = new OrderSearchPresenter(screen, order);
-            screen.ShowDialog();
-        }
-
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void toolStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

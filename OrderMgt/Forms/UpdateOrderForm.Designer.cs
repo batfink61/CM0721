@@ -53,18 +53,18 @@
             this.lblOrderInvoice = new System.Windows.Forms.Label();
             this.chkContract = new System.Windows.Forms.CheckBox();
             this.lblContract = new System.Windows.Forms.Label();
-            this.picSidePanel = new System.Windows.Forms.PictureBox();
             this.grpAssembly = new System.Windows.Forms.GroupBox();
             this.lblAssemblyDate = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnUndo = new System.Windows.Forms.Button();
+            this.picSidePanel = new System.Windows.Forms.PictureBox();
             this.grpSummary.SuspendLayout();
             this.grpPlanning.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSidePanel)).BeginInit();
             this.grpAssembly.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSidePanel)).BeginInit();
             this.SuspendLayout();
             // 
             // grpSummary
@@ -314,19 +314,6 @@
             this.lblContract.TabIndex = 4;
             this.lblContract.Text = "Contract Signed: ";
             // 
-            // picSidePanel
-            // 
-            this.picSidePanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.picSidePanel.BackColor = System.Drawing.Color.White;
-            this.picSidePanel.Image = global::OrderMgt.Properties.Resources.neworder;
-            this.picSidePanel.Location = new System.Drawing.Point(-1, 12);
-            this.picSidePanel.Name = "picSidePanel";
-            this.picSidePanel.Size = new System.Drawing.Size(143, 630);
-            this.picSidePanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSidePanel.TabIndex = 8;
-            this.picSidePanel.TabStop = false;
-            // 
             // grpAssembly
             // 
             this.grpAssembly.Controls.Add(this.lblAssemblyDate);
@@ -384,6 +371,18 @@
             this.btnUndo.UseVisualStyleBackColor = true;
             this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
             // 
+            // picSidePanel
+            // 
+            this.picSidePanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.picSidePanel.BackColor = System.Drawing.Color.White;
+            this.picSidePanel.Image = global::OrderMgt.Properties.Resources.neworder;
+            this.picSidePanel.Location = new System.Drawing.Point(-1, 12);
+            this.picSidePanel.Name = "picSidePanel";
+            this.picSidePanel.Size = new System.Drawing.Size(143, 619);
+            this.picSidePanel.TabIndex = 8;
+            this.picSidePanel.TabStop = false;
+            // 
             // UpdateOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,9 +404,9 @@
             this.grpPlanning.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSidePanel)).EndInit();
             this.grpAssembly.ResumeLayout(false);
             this.grpAssembly.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSidePanel)).EndInit();
             this.ResumeLayout(false);
 
         }

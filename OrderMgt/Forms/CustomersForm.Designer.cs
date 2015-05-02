@@ -48,10 +48,10 @@
             this.txtMobile = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtRegistered = new System.Windows.Forms.TextBox();
-            this.picSidePanel = new System.Windows.Forms.PictureBox();
             this.grpCustomer = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picSidePanel)).BeginInit();
+            this.picSidePanel = new System.Windows.Forms.PictureBox();
             this.grpCustomer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSidePanel)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -231,18 +231,6 @@
             this.txtRegistered.Size = new System.Drawing.Size(96, 20);
             this.txtRegistered.TabIndex = 9;
             // 
-            // picSidePanel
-            // 
-            this.picSidePanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
-            this.picSidePanel.BackColor = System.Drawing.Color.White;
-            this.picSidePanel.Location = new System.Drawing.Point(-2, -1);
-            this.picSidePanel.Name = "picSidePanel";
-            this.picSidePanel.Size = new System.Drawing.Size(143, 354);
-            this.picSidePanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSidePanel.TabIndex = 6;
-            this.picSidePanel.TabStop = false;
-            // 
             // grpCustomer
             // 
             this.grpCustomer.Controls.Add(this.txtCustomerId);
@@ -270,6 +258,19 @@
             this.grpCustomer.TabStop = false;
             this.grpCustomer.Text = "Customer ";
             // 
+            // picSidePanel
+            // 
+            this.picSidePanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.picSidePanel.BackColor = System.Drawing.Color.White;
+            this.picSidePanel.Image = global::OrderMgt.Properties.Resources.builders;
+            this.picSidePanel.Location = new System.Drawing.Point(-2, -1);
+            this.picSidePanel.Name = "picSidePanel";
+            this.picSidePanel.Size = new System.Drawing.Size(143, 354);
+            this.picSidePanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSidePanel.TabIndex = 6;
+            this.picSidePanel.TabStop = false;
+            // 
             // CustomersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,9 +283,9 @@
             this.Name = "CustomersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Maintain Customers";
-            ((System.ComponentModel.ISupportInitialize)(this.picSidePanel)).EndInit();
             this.grpCustomer.ResumeLayout(false);
             this.grpCustomer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSidePanel)).EndInit();
             this.ResumeLayout(false);
 
         }

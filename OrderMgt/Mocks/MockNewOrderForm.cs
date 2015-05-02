@@ -5,9 +5,9 @@ using System.Text;
 
 namespace OrderMgt
 {
-    public class MockNewOrderForm: INewOrderGui
+    public class MockEditOrderForm: IEditOrderGui
     {
-        private NewOrderPresenter _presenter;
+        private EditOrderPresenter _presenter;
         private String _txtCustomerId;
         private String _lblName;
         private String _lblAddress;
@@ -27,7 +27,7 @@ namespace OrderMgt
         private String _txtBathrooms;
         private String _txtSelectedOptionsPrice;
 
-        public MockNewOrderForm()
+        public MockEditOrderForm()
         {
         }
 
@@ -39,7 +39,7 @@ namespace OrderMgt
         {
         }
 
-        public void Register(NewOrderPresenter presenter)
+        public void Register(EditOrderPresenter presenter)
         {
             _presenter = presenter;
         }
@@ -201,14 +201,11 @@ namespace OrderMgt
             _presenter.txtCustomerId_TextChanged();
         }
 
-        public void EnableControls(Boolean enabled)
+        public void grpCustomerSearch_Enable(Boolean enabled)
         {
-            // This simple function allows the 'Presenter' to enable.disable data entry text boxes
-            // stopping the user from entering data before they've made it clear what they are doing
-
         }
 
-        private void NewOrderForm_Load(object sender, EventArgs e)
+        private void EditOrderForm_Load(object sender, EventArgs e)
         {
         }
 
@@ -251,6 +248,10 @@ namespace OrderMgt
         {
             //            if (cboBuildingType.Items.Count > 0)
             _presenter.cboBuildingType_SelectedIndexChanged();
+        }
+
+        public void SetCurrentBuildingOption(int row)
+        {
         }
 
         public void ClearBuildingOptions()

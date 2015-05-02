@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 
+// Base class for all building types (i.e. all frame types)
 namespace OrderMgt
 {
     class FrameBase
@@ -21,6 +22,9 @@ namespace OrderMgt
         
         public FrameBase(String name)
         {
+            // Read definition for this building type from the building definitions table
+            // Use the BuildingGateway fro all SQL I/O
+
             DataSet ds = BuildingGateway.Find(name);
 
             _name = name;

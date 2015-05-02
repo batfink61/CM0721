@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+// Concrete instance fo the ORCHARD building type.
+// BASE class is responsible for reading definition from file.
+// This is SELF-REGISTERING with the BUILDINGFACTORY
+
 namespace OrderMgt
 {
     class FrameOrchard: FrameBase, IBuilding

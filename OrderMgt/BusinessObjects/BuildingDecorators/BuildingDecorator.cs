@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+// This is the BASE class for the building decorator.
+// It currently only handles decorating Name and Price but in time, as new option types are added, it
+// could easily be extended to decorate bedrooms, reception rooms etc.
+
 namespace OrderMgt
 {
     public abstract class BuildingDecorator : IBuilding
@@ -16,13 +20,13 @@ namespace OrderMgt
             _baseFrame = baseFrame;
         }
 
-        public String Name
+        public virtual String Name
         {
             get
             { return String.Format("{0} {1}", _baseFrame.Name, m_name); }
         }
 
-        public Decimal Price
+        public virtual Decimal Price
         {
             get
             { return _baseFrame.Price + m_price; }

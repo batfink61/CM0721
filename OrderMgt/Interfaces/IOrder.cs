@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+// Order interface used to pass reference for all Orders.
+
 namespace OrderMgt
 {
     public interface IOrder
@@ -32,6 +34,9 @@ namespace OrderMgt
         void SetFrame(String building);
         void AddOption(String optionName);
         void Save();
+
+        int OptionsCount { get; }
+        String Option(int index);
         string CheckStatus();
         OrderMemento SaveOrderMemento();
         void RestoreMemento(OrderMemento memento);

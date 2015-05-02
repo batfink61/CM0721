@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
 
 namespace OrderMgt
 {
@@ -27,9 +26,7 @@ namespace OrderMgt
             //    _order = new Order();
             //else
             //    _order = new Order(_screen.OrderId);
-            
             _order = new Order(_screen.OrderId);
-            _order.SetFrame(_order.BuildingType);  //We need to do this to get the OptionsPrice
             RefreshScreen();
         }
 
@@ -63,6 +60,7 @@ namespace OrderMgt
                 _screen.CustomerName = _customer.Name;
                 _screen.Address = String.Format("{0},\r\n{1}, {2}", _customer.Address, _customer.Town, _customer.PostCode);
                 _screen.Telephone = _customer.Telephone;
+                _screen.EnableControls(true);
             }
             else
             {
@@ -70,17 +68,6 @@ namespace OrderMgt
                 _screen.Address = "";
                 _screen.Telephone = "";
             }
-            
-
-        }
-        private void ClearScreen() 
-        {
-            _screen.CustomerId = "";
-            _screen.BuildingType = "";
-            _screen.FramePrice = "";
-            _screen.OptionsPrice = "";
-            _screen.VAT = "";
-            _screen.TotalPrice = "";
         }
 
         private void RefreshScreen()
@@ -88,8 +75,9 @@ namespace OrderMgt
             _screen.CustomerId = _order.CustomerId;
             _screen.BuildingType = _order.BuildingType.ToString();
             _screen.FramePrice = String.Format("{0:0.00}", _order.FramePrice);
-            _screen.OptionsPrice = String.Format("{0:0.00}", _order.OptionsPrice);
-            _screen.VAT = String.Format("{0:0.00}", _order.Vat);
+            //Todo
+            //_screen.OptionsPrice = String.Format("{0:0.00}", _order.OptionsPrice);
+            //_screen.VAT = String.Format("{0:0.00}", _order.Vat);
             _screen.TotalPrice = String.Format("{0:0.00}", _order.TotalPrice);
 
             _screen.EnableControls(true);

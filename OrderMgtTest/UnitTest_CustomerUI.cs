@@ -39,8 +39,6 @@ namespace OrderMgtTest
         public void TestCleanUp()
         {
         }
-
-        [TestMethod]
         public void TestMethod1()
         {
         }
